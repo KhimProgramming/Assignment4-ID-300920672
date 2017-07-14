@@ -20,6 +20,14 @@ namespace Assignment4_ID_300920672
         // PROPERTIES
       
     }
+    public bool HasMoons()
+    {
+        return this.HasMoons();
+    }
+    public bool Haitable()
+    {
+
+    }
     public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen) :base(name, diameter, mass)
     {
         this._oxygen = oxygen;

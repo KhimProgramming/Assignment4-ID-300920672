@@ -27,10 +27,10 @@ namespace Assignment4_ID_300920672
         private double _rotationPeriod;
 
         // PUBLIC PROPERTIES
-        public double Diameter{ get { return this._diameter; } }
-        public double Mass { get { return this._mass; } }
+        public readonly double Diameter;
+        public readonly double Mass; 
         public int MoonCount { get { return this._moonCount; } set { this._moonCount = value; } }
-        public string Name { get { return this._name; } }
+        public readonly string Name;
         public double OrbitalPeriod { get {return this._orbitalPeriod; } set {this._orbitalPeriod = value; } }
         public int RingCount { get {return this._ringCount; } set {this._ringCount=value; } }
         public double RotationPeriod { get {return this._rotationPeriod; } set {this._rotationPeriod=value; } }

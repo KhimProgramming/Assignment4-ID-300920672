@@ -41,11 +41,19 @@ namespace Assignment4_ID_300920672
         // PUBLIC METHODS
         public bool HasMoons()
         {
+            if (MoonCount > 0)
+            {
+                Console.WriteLine();
+            }
             return this.HasMoons();
         }
 
         public bool HasRings()
         {
+            if (RingCount > 0)
+            {
+                Console.WriteLine();
+            }
             return this.HasRings();
         }
     }

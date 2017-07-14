@@ -14,7 +14,6 @@ namespace Assignment4_ID_300920672
 {
     public interface IHasMoons
     {
-        // Public properties
-        int Moons { get; set; }
+        bool HasMoons();
     }
 }
