@@ -12,10 +12,11 @@ using System.Text;
 
 namespace Assignment4_ID_300920672
 {
-    public class GiantPlanet : Planet
+    public class GiantPlanet : Planet,IHasMoons,IHasRings
     {
         // PRIVATE INSTANCE VARIABLES (FIELDS)
         private string _type;
+        
 
 
 
@@ -38,9 +39,14 @@ namespace Assignment4_ID_300920672
         // PRIVATE METHODS
 
         // PUBLIC METHODS
-        public void HasMoon()
+        public bool HasMoons()
         {
+            return this.HasMoons();
+        }
 
+        public bool HasRings()
+        {
+            return this.HasRings();
         }
     }
 }
