@@ -10,6 +10,10 @@ namespace Assignment4_ID_300920672
     {
         static void Main(string[] args)
         {
+            GiantPlanet jupiter = new GiantPlanet("Jupiter",123000,9952854284, "Gas");
+            Console.WriteLine(  jupiter.ToString());
+
+            Console.ReadKey();
         }
     }
 }

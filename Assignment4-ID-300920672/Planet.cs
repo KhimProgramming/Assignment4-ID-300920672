@@ -28,14 +28,15 @@ namespace Assignment4_ID_300920672
 
         // PUBLIC PROPERTIES
         public readonly double Diameter;
-        public readonly double Mass; 
+        public readonly double Mass;
         public int MoonCount { get { return this._moonCount; } set { this._moonCount = value; } }
         public readonly string Name;
-        public double OrbitalPeriod { get {return this._orbitalPeriod; } set {this._orbitalPeriod = value; } }
-        public int RingCount { get {return this._ringCount; } set {this._ringCount=value; } }
-        public double RotationPeriod { get {return this._rotationPeriod; } set {this._rotationPeriod=value; } }
+        public double OrbitalPeriod { get { return this._orbitalPeriod; } set { this._orbitalPeriod = value; } }
+        public int RingCount { get { return this._ringCount; } set { this._ringCount = value; } }
+        public double RotationPeriod { get { return this._rotationPeriod; } set { this._rotationPeriod = value; } }
 
-        // CONSTRUCTORS ---------------------------
+        #region Constructors
+
         /// <summary>
         /// This is the main constructor for the Planet class.
         /// It takes 3 parameters - name (string) - diameter (double) - mass (double)
@@ -46,9 +47,12 @@ namespace Assignment4_ID_300920672
             this._diameter = diameter;
             this._mass = mass;
         }
+
+        #endregion
+
         public override string ToString()
         {
-            return string.Format("Name: " + Name, "Diameter: " + Diameter, "Mass: "+ Mass );
+            return string.Format("Name: " + Name, "Diameter: " + Diameter, "Mass: " + Mass);
         }
         // PRIVATE METHODS
 

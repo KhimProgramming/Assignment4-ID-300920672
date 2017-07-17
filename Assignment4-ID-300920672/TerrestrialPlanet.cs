@@ -12,24 +12,32 @@ using System.Text;
 
 namespace Assignment4_ID_300920672
 {
-    public class TerrestrialPlanet : Planet,IHasMoons,IHasRings
+    public class TerrestrialPlanet : Planet, IHasMoons, IHasRings
     {
         // PRIVATE INSTANCE VARIABLES (FIELDS)
         private bool _oxygen;
 
         // PROPERTIES
-      
-    }
-    public bool HasMoons()
-    {
-        return this.HasMoons();
-    }
-    public bool Haitable()
-    {
 
-    }
-    public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen) :base(name, diameter, mass)
-    {
-        this._oxygen = oxygen;
+
+        public bool HasMoons()
+        {
+            return MoonCount > 0;
+        }
+
+        public bool Haitable()
+        {
+            return _oxygen;
+        }
+
+        public bool HasRings()
+        {
+            return MoonCount > 0;
+        }
+
+        public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen) : base(name, diameter, mass)
+        {
+            this._oxygen = oxygen;
+        }
     }
 }

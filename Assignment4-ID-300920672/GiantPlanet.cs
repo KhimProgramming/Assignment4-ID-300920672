@@ -12,11 +12,11 @@ using System.Text;
 
 namespace Assignment4_ID_300920672
 {
-    public class GiantPlanet : Planet,IHasMoons,IHasRings
+    public class GiantPlanet : Planet, IHasMoons, IHasRings
     {
         // PRIVATE INSTANCE VARIABLES (FIELDS)
-        private string _type;
-        
+        private readonly string _type;
+
 
 
 
@@ -33,7 +33,7 @@ namespace Assignment4_ID_300920672
         /// <param name="type"></param>
         public GiantPlanet(string name, double diameter, double mass, string type) : base(name, diameter, mass)
         {
-          this._type = type;
+            this._type = type;
         }
 
         // PRIVATE METHODS
@@ -41,11 +41,16 @@ namespace Assignment4_ID_300920672
         // PUBLIC METHODS
         public bool HasMoons()
         {
-            if (MoonCount > 0)
-            {
-                Console.WriteLine();
-            }
-            return this.HasMoons();
+            //return MoonCount > 0;
+
+            bool hasMoons = MoonCount > 0;
+            return hasMoons;
+
+            //if (MoonCount > 0)
+            //{
+            //    Console.WriteLine();
+            //}
+            //return this.HasMoons();
         }
 
         public bool HasRings()
