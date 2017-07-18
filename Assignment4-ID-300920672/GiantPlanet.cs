@@ -39,27 +39,29 @@ namespace Assignment4_ID_300920672
         // PRIVATE METHODS
 
         // PUBLIC METHODS
+        /// <summary>
+        /// This is HasMoons method that will return true if the MoonCount property is 
+        /// greater than zero
+        /// </summary>
+        /// <returns></returns>
         public bool HasMoons()
         {
-            //return MoonCount > 0;
+            //return MoonCount > 0;    or this way works also
 
             bool hasMoons = MoonCount > 0;
-            return hasMoons;
-
-            //if (MoonCount > 0)
-            //{
-            //    Console.WriteLine();
-            //}
-            //return this.HasMoons();
+            return hasMoons;            
         }
-
+        /// <summary>
+        /// This is HasRings method that will return true if the RingCount property is 
+        /// greater than zero
+        /// </summary>
+        /// <returns></returns>
         public bool HasRings()
         {
-            if (RingCount > 0)
-            {
-                Console.WriteLine();
-            }
-            return this.HasRings();
+            // return RingCount > 0;   or this way works also
+
+            bool hasRings = RingCount > 0;
+            return HasRings();
         }
     }
 }
