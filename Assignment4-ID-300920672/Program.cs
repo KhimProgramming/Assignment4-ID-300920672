@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * Name: Khim Tang
  * Date: July 17, 2017
  * Description: This is the driver/program class
- * Version: 0.1 - To use the GiantPlanet class by creating a new giantPlanet object
+ * Version: 0. 2- To use the TerrestrialPlanet class by creating a new TerrestrialPlanet object
  */
 
 namespace Assignment4_ID_300920672
@@ -18,9 +18,14 @@ namespace Assignment4_ID_300920672
         static void Main(string[] args)
         {
             GiantPlanet jupiter = new GiantPlanet("Jupiter",123000,9952854284, "Gas");
-            Console.WriteLine(  jupiter.ToString());
+            Console.WriteLine(jupiter.ToString());
+
+            TerrestrialPlanet mercury = new TerrestrialPlanet("Mercury", 2333333, 900000000, true);
+            Console.WriteLine(mercury.ToString());
 
             Console.ReadKey();
+
+
         }
     }
 }

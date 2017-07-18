@@ -52,7 +52,7 @@ namespace Assignment4_ID_300920672
 
         public override string ToString()
         {
-            return string.Format("Name: " + Name, "Diameter: " + Diameter, "Mass: " + Mass);
+            return string.Format("Name: " + Name, "Diameter:  " + Diameter, "Mass:  " + Mass);
         }
         // PRIVATE METHODS
 
