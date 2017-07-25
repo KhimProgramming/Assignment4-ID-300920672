@@ -27,10 +27,10 @@ namespace Assignment4_ID_300920672
         private double _rotationPeriod;
 
         // PUBLIC PROPERTIES
-        public readonly double Diameter;
-        public readonly double Mass;
+        public double Diameter { get { return this._diameter; } set { this._diameter = value; } }
+        public double Mass { get { return this._mass; } set { this._mass = value; } }
         public int MoonCount { get { return this._moonCount; } set { this._moonCount = value; } }
-        public readonly string Name;
+        public string Name { get { return this._name; } set { this._name = value; } }
         public double OrbitalPeriod { get { return this._orbitalPeriod; } set { this._orbitalPeriod = value; } }
         public int RingCount { get { return this._ringCount; } set { this._ringCount = value; } }
         public double RotationPeriod { get { return this._rotationPeriod; } set { this._rotationPeriod = value; } }
@@ -52,7 +52,7 @@ namespace Assignment4_ID_300920672
 
         public override string ToString()
         {
-            return string.Format("Name: " + Name, "Diameter:  " + Diameter, "Mass:  " + Mass);
+            return string.Format("Name: " + Name + " Diameter:  " + Diameter + " Mass:  " + Mass);
         }
         // PRIVATE METHODS
 

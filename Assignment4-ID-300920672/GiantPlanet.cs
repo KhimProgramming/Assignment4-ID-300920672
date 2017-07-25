@@ -12,13 +12,12 @@ using System.Text;
 
 namespace Assignment4_ID_300920672
 {
+    //public enum Type { Gas, Ice }
+
     public class GiantPlanet : Planet, IHasMoons, IHasRings
     {
         // PRIVATE INSTANCE VARIABLES (FIELDS)
         private readonly string _type;
-
-
-
 
         // PUBLIC PROPERTIES
 
@@ -33,7 +32,15 @@ namespace Assignment4_ID_300920672
         /// <param name="type"></param>
         public GiantPlanet(string name, double diameter, double mass, string type) : base(name, diameter, mass)
         {
-            this._type = type;
+            //Ask professor if we can use a type Enum
+            if (type.ToLower() == "gas" || type.ToLower() == "ice")
+            {
+                this._type = type;
+            }
+            else
+            {
+                throw new ArgumentException("Must be gas or ice type");
+            }
         }
 
         // PRIVATE METHODS

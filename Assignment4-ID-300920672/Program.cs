@@ -17,12 +17,14 @@ namespace Assignment4_ID_300920672
     {
         static void Main(string[] args)
         {
-            GiantPlanet jupiter = new GiantPlanet("Jupiter",123000,9952854284, "Gas");
+            GiantPlanet jupiter = new GiantPlanet("Jupiter", 123000, 9952854284, "Gas");
+            //Writing jupiter without ToString() will work the same as using it.
             Console.WriteLine(jupiter.ToString());
+            // Console.WriteLine(jupiter);
 
             TerrestrialPlanet mercury = new TerrestrialPlanet("Mercury", 2333333, 900000000, true);
+            // Console.WriteLine(mercury);
             Console.WriteLine(mercury.ToString());
-
             Console.ReadKey();
 
 

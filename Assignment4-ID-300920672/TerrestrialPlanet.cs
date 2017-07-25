@@ -12,7 +12,7 @@ using System.Text;
 
 namespace Assignment4_ID_300920672
 {
-    public class TerrestrialPlanet : Planet, IHasMoons, IHasRings
+    public class TerrestrialPlanet : Planet, IHasMoons, IHabitable
     {
         // PRIVATE INSTANCE VARIABLES (FIELDS)
         private bool _oxygen;
@@ -25,15 +25,11 @@ namespace Assignment4_ID_300920672
             return MoonCount > 0;
         }
 
-        public bool Haitable()
+        public bool IsHabitable()
         {
             return _oxygen;
         }
-
-        public bool HasRings()
-        {
-            return MoonCount > 0;
-        }
+       
 
         public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen) : base(name, diameter, mass)
         {
